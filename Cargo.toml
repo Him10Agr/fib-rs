@@ -1,0 +1,14 @@
+[package]
+name = "fib-Him10Agr-rs"
+version = "0.1.0"
+authors = ["himanshuagrawal<himanshuagr.c2@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+[dependencies.pyo3]
+version = "0.24.0"
+features = ["extension-module"]
+
+[lib]
+name = "fib_Him10Agr_rs"
+crate-type = ["cdylib"]
