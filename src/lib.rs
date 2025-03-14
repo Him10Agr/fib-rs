@@ -8,7 +8,7 @@ fn say_hello() -> PyResult<()> {
 }
 
 #[pymodule]
-fn fib_rs(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_wrapped(wrap_pyfunction!(say_hello));
+fn fib_rs(_py: Python, m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(say_hello,_py)?)?;
     return Ok(());
 }

@@ -5,10 +5,10 @@ from setuptools import setup
 from setuptools_rust import Binding, RustExtension
 
 setup(
-    name="fib-Him10Agr-rs",
+    name="fib_Him10Agr_rs.py",
     version="0.1",
     rust_extensions=[RustExtension(
-        ".fib-rs.fib_rs",
+        ".fib_rs.fib_rs",
         path="Cargo.toml", binding=Binding.PyO3)],
     packages=["fib_rs"],
     classifiers=[
