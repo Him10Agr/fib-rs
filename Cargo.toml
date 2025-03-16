@@ -1,5 +1,5 @@
 [package]
-name = "fib-Him10Agr-rs"
+name = "fib-rs"
 version = "0.1.0"
 authors = ["himanshuagrawal<himanshuagr.c2@gmail.com>"]
 edition = "2018"
@@ -10,5 +10,5 @@ version = "0.24.0"
 features = ["extension-module"]
 
 [lib]
-name = "fib_Him10Agr_rs"
+name = "fib_rs"
 crate-type = ["cdylib"]
